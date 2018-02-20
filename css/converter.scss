@@ -1,0 +1,45 @@
+$max-width: 960px;
+$min-width: 320px;
+$table-width: 240px;
+$table-border:1px solid grey;
+$input-width: 150px;
+$margin: 0px auto;
+$fontSize: 15;
+
+#container{
+    width:$max-width;
+    margin: $margin;
+}
+h2{
+    text-align: center;
+}
+p{
+    font-size: $fontSize;
+}
+table{
+    width: $table-width;
+    margin: $margin;
+    border: $table-border;
+    display: inline-table;
+    border-spacing: 10px;
+}
+
+input{
+     width: $input-width;
+}
+
+@media screen and (max-width:$max-width) {
+    table{
+        display: inline-table
+    }
+    #container{
+        width: 100%
+    }
+}
+
+@media screen and (max-width:$min-width) {
+
+    #container{
+        width: $min-width
+    }
+}
